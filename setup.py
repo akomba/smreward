@@ -46,8 +46,7 @@ setup(
     keywords=[],
     scripts=[],
     entry_points={"console_scripts": [
-        "smreward=smreward.smreward:main",
-        "smxchecker=smreward.smxchecker:main"
+        "smreward=smreward.smreward:run"
         ]},
     #data_files=[("share/man/man6", ["man/smreward.6"])],
     zip_safe=False,
