@@ -1,0 +1,16 @@
+reward_id     = "SETUP"
+tag           = "SETUP" # watch for news items that are tagged with this
+expiry_days   = 7       # news articles expire after this many days.
+                        # it means after this many days we won't check for new comments.
+                        # also the reward gets less (?)
+reward_amount = 1
+collection_id = 1
+auto_approve  = true    # if this is true, then the code will auto approve a comment
+                        # as long as it has a twitter link.
+                        # this is suboptimal but twitter makes it super difficult
+                        # to check the content
+
+[[loops]]
+name          = "hyperspeed"
+repeat        = 10
+module        = "hyperspeed.hyperspeed" 
